@@ -92,11 +92,11 @@ Resources:
          sudo pip install boto3
          # Install airflow using pip
          echo "Install Apache Airflow"
-         sudo pip install apache-airflow
+         sudo AIRFLOW_GPL_UNIDECODE=yes pip install apache-airflow
          # Encrypt connection passwords in metadata db
-         sudo pip install apache-airflow[crypto]
+         sudo AIRFLOW_GPL_UNIDECODE=yes pip install apache-airflow[crypto]
          # Postgres operators and hook, support as an Airflow backend
-         sudo pip install apache-airflow[postgres]
+         sudo AIRFLOW_GPL_UNIDECODE=yes pip install apache-airflow[postgres]
          sudo -H pip install six==1.10.0
          sudo pip install --upgrade six
          sudo pip install markupsafe
